@@ -133,7 +133,7 @@ exports.notice = (comment) => {
       process.env.SITE_NAME
     } 」上有新消息啦！！
 评论人： ${name} 
-发表内容：${$(text
+发表内容：${$(comment
     .replace(/  <img.*?src="(.*?)".*?>/g, "\n[图片]$1\n")
     .replace(/<br>/g, "\n")
 )
